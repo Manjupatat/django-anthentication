@@ -20,7 +20,7 @@ from django.apps import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", include('demo_app.urls'))
+    path("", include('authentication_app.urls'))
     # path("", views)
 ]
 
