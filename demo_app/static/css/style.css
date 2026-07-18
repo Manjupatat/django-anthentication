@@ -1,0 +1,64 @@
+body{
+    background:#f5f7fb;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.card{
+    border:none;
+    border-radius:15px;
+}
+
+.card-body{
+    padding:35px;
+}
+
+h2{
+    font-weight:bold;
+}
+
+.form-control{
+    height:48px;
+    border-radius:10px;
+}
+
+.btn{
+    border-radius:10px;
+    height:48px;
+}
+
+.alert{
+    border-radius:10px;
+}
+
+a{
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+.hero{
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:50px;
+    font-weight:bold;
+}
+
+.hero p{
+    font-size:20px;
+    color:#666;
+}
+
+footer{
+    margin-top:100px;
+    padding:20px;
+    text-align:center;
+    color:#777;
+}
