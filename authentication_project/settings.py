@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "demo_app",
+    "authentication_app",
 ]
 
 MIDDLEWARE = [
@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'demo_project.urls'
+ROOT_URLCONF = 'authentication_project.urls'
 
 TEMPLATES = [
     {
@@ -67,7 +67,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'demo_project.wsgi.application'
+WSGI_APPLICATION = 'authentication_project.wsgi.application'
 
 
 # Database
@@ -75,8 +75,27 @@ WSGI_APPLICATION = 'demo_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        #sqlite
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+
+        #postgreSQL-local
+        # 'ENGINE': 'django.db.backends.postgresql',
+        # 'NAME': 'django_db',
+        # 'USER': 'django_user',
+        # 'PASSWORD': 'YourStrongPassword',
+        # 'HOST': 'localhost',
+        # 'PORT': '8080',
+
+        #supabase
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME":"postgres",
+        "USER":"postgres",
+        "PASSWORD":"cD7?Df$dJkjvC4h",
+        "HOST":"db.hblvvxdyjcmvxrcwobkw.supabase.co",
+        "PORT":"5432",
+        # database:postgres
+        # user:postgres
     }
 }
 
